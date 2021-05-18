@@ -1,0 +1,20 @@
+Package: softwarePatent
+Type: Package
+Title: Help you in applying software patent in China.
+Version: 0.1.0
+Author: Chun-Hui Gao <gaospecial@gmail.com>
+Maintainer: Chun-Hui gao <gaospecial@gmail.com>
+Description: Three documents are needed in applying a software patent in China,
+  the first one is a table, the second is the source code, and the last is a user
+  manual. Unfortunately, all documents are in Word document.
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    magrittr

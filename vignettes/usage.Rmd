@@ -1,0 +1,39 @@
+---
+title: "usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{usage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = ""
+)
+
+knitr::opts_knit$set(root.dir = usethis::proj_path())
+```
+
+```{r eval=FALSE}
+library(softwarePatent)
+```
+
+```{r echo=FALSE}
+devtools::load_all()
+```
+
+## All the files
+
+
+```{r  echo=FALSE}
+fs::dir_tree()
+```
+
+## Source code of every file
+
+```{r results="asis", echo=FALSE}
+code()
+```
+
