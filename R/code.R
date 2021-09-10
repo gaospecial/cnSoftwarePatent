@@ -1,3 +1,13 @@
+#' Print R package source code in Markdown format
+#'
+#' @param path root directory of your package source code
+#' @param ignore ignore files, use regexp here
+#' @param pattern source code file, use regexp here
+#'
+#' @return
+#' @export
+#'
+#' @examples code()
 code <- function (path = ".", ignore = ".Rbuildignore", pattern = "(R|md|Rd|Rmd|DESCRIPTION|NAMESPACE)$"){
   files = list.files(path = path, recursive = TRUE, full.names = TRUE, pattern = pattern)
   ignore = readLines(ignore)
